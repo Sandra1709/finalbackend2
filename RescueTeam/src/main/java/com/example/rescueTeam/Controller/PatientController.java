@@ -57,38 +57,3 @@ public class PatientController {
 
 
 
-
-/*
-
-@Autowired
-private PatientService patientService;
-@PostMapping("/admit")
-public String admitPatient(
-        @RequestBody Patient patient,
-        @RequestParam(required = false) String location,
-        @RequestParam String severity) {
-
-    // Fetch SOS message from MessageSystem
-    SosMessage sosMessage = patientService.fetchSosMessage(location, severity);
-
-    // Print or log the SOS message details (for debugging or auditing)
-    System.out.println("Received SOS message: " + sosMessage);
-
-    // Check hospital availability and admit the patient
-    if (patientService.isHospitalAvailable()) {
-        patientService.savePatient(patient);
-        return "Patient " + patient.getName() + " admitted successfully. Severity: " + sosMessage.getSeverity();
-    } else {
-        return "No hospitals available at this moment.";
-    }
-}
-@GetMapping("/availability")
-public boolean checkHospitalAvailability() {
-    return patientService.isHospitalAvailable();
-}
-
-@GetMapping("/patients")
-public List<Patient> getPatients() {
-    return patientService.getAllPatients();
-}
-*/

@@ -24,3 +24,4 @@ public class PatientServices {
         return patientRepository.save(patient);
     }
 }
+

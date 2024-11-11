@@ -7,3 +7,4 @@ import com.example.rescueTeam.model.Hospital;
 public interface HospitalRepository extends JpaRepository<Hospital, Long> {
 
 }
+

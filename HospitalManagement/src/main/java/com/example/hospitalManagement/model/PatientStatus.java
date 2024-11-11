@@ -35,3 +35,4 @@ public class PatientStatus {
     private String notes;
 
 }
+

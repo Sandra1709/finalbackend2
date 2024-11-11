@@ -8,3 +8,4 @@ import com.example.hospitalManagement.model.PatientStatus;
 public interface PatientStatusRepository  extends JpaRepository<PatientStatus, Long>  {
 
 }
+

@@ -25,3 +25,4 @@ public class Hospital {
 	    private String medicalCondition;
 
 }
+
