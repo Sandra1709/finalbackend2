@@ -61,13 +61,13 @@ public class PatientStatusController {
 	@Autowired
     private PatientStatusService patientStatusService;
 
-    // Endpoint to add a status for a patient
+    
     @PostMapping("/add")
     public PatientStatus addPatientStatus(@RequestBody PatientStatus patientStatus) {
         return patientStatusService.savePatientStatus(patientStatus);
     }
 
-    // Endpoint to get all statuses for a specific patient
+ 
     @GetMapping("/getAllForPatient/{patientId}")
     public List<PatientStatus> getStatusesForPatient(@PathVariable Long patientId) {
         return patientStatusService.getStatusesForPatient(patientId);
